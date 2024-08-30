@@ -72,4 +72,8 @@ public class Course {
     public String toString() {
         return String.format("%-10s%-30s%2d  %-10s", id, title, credit, department);
     }
+
+    public int getCredits() {
+        return 0;
+    }
 }

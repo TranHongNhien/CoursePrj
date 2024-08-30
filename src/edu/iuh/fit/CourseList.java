@@ -6,6 +6,11 @@
 
 package edu.iuh.fit;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
 /*
  * @description
  * @author: Nhien Tran
@@ -52,6 +57,87 @@ public class CourseList {
         }
         return false;
     }
+
+    public Course findCourseById(String courseId) {
+        for (Course course : courses) {
+            if (course != null && course.getId().equals(courseId)) {
+                return course;
+            }
+        }
+        return null;
+    }
+
+    public Course findCourseByTitle(String courseName) {
+        for (Course course : courses) {
+            if (course != null && course.getTitle().equals(courseName)) {
+                return course;
+            }
+        }
+        return null;
+    }
+
+    public Course findCourseByDepartment(String courseDepartment) {
+        for (Course course : courses) {
+            if (course != null && course.getDepartment().equals(courseDepartment)) {
+                return course;
+            }
+        }
+        return null;
+    }
+
+//    public Course SortCourseByTitle()
+//    {
+//
+//    };
+
+    public List<Course> findCoursesWithHighestCredits() {
+        List<Course> result = new ArrayList<>();
+        if (courses.length == 0) {
+            return result;
+        }
+
+        int maxCredits = 0;
+
+        // First pass to find the maximum number of credits
+        for (Course course : courses) {
+            if (course != null && course.getCredit() > maxCredits) {
+                maxCredits = course.getCredit();
+            }
+        }
+
+        // Second pass to collect courses with the maximum credits
+        for (Course course : courses) {
+            if (course != null && course.getCredit() == maxCredits) {
+                result.add(course);
+            }
+        }
+
+        return result;
+    }
+
+    public String findDepartmentWithMostCourses() {
+        // Use a map to count courses per department
+        java.util.Map<String, Integer> departmentCount = new java.util.HashMap<>();
+        for (Course course : courses) {
+            if (course != null) {
+                departmentCount.put(course.getDepartment(),
+                        departmentCount.getOrDefault(course.getDepartment(), 0) + 1);
+            }
+        }
+
+        // Find the department with the highest count
+        String departmentWithMostCourses = null;
+        int maxCount = 0;
+        for (java.util.Map.Entry<String, Integer> entry : departmentCount.entrySet()) {
+            if (entry.getValue() > maxCount) {
+                maxCount = entry.getValue();
+                departmentWithMostCourses = entry.getKey();
+            }
+        }
+
+        return departmentWithMostCourses;
+    }
+
 
     public Course[] getCourses() {
         return courses;
