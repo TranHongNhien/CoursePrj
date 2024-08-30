@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="90ff4674-e056-4fa1-b1e2-bf30f0735602" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/iuh/fit/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/iuh/fit/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/iuh/fit/CourseList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/iuh/fit/CourseList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/iuh/fit/TestCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/iuh/fit/TestCourse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,22 +31,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.TestCourse.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/codeJava/CoursePrj&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;F:/codeJava/CoursePrj/src/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.TestCourse.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/codeJava/CoursePrj",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "F:/codeJava/CoursePrj/src/Main.java",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -72,7 +69,7 @@
       <workItem from="1724916582557" duration="174000" />
       <workItem from="1724916902351" duration="1376000" />
       <workItem from="1724946424933" duration="2998000" />
-      <workItem from="1725030088841" duration="2112000" />
+      <workItem from="1725030088841" duration="2574000" />
     </task>
     <servers />
   </component>
